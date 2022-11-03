@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		84FA188429140E9800E5298C /* PedelecApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FA188329140E9800E5298C /* PedelecApp.swift */; };
+		84FA188629140E9800E5298C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FA188529140E9800E5298C /* ContentView.swift */; };
+		84FA188829140E9900E5298C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84FA188729140E9900E5298C /* Assets.xcassets */; };
+		84FA188B29140E9900E5298C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84FA188A29140E9900E5298C /* Preview Assets.xcassets */; };
+		84FA189529140E9900E5298C /* PedelecTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FA189429140E9900E5298C /* PedelecTests.swift */; };
+		84FA189F29140E9900E5298C /* PedelecUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FA189E29140E9900E5298C /* PedelecUITests.swift */; };
+		84FA18A129140E9900E5298C /* PedelecUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FA18A029140E9900E5298C /* PedelecUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84FA189129140E9900E5298C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84FA187829140E9800E5298C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84FA187F29140E9800E5298C;
+			remoteInfo = Pedelec;
+		};
+		84FA189B29140E9900E5298C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84FA187829140E9800E5298C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84FA187F29140E9800E5298C;
+			remoteInfo = Pedelec;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		84FA188029140E9800E5298C /* Pedelec.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pedelec.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84FA188329140E9800E5298C /* PedelecApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PedelecApp.swift; sourceTree = "<group>"; };
+		84FA188529140E9800E5298C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		84FA188729140E9900E5298C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84FA188A29140E9900E5298C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		84FA189029140E9900E5298C /* PedelecTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PedelecTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84FA189429140E9900E5298C /* PedelecTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PedelecTests.swift; sourceTree = "<group>"; };
+		84FA189A29140E9900E5298C /* PedelecUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PedelecUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84FA189E29140E9900E5298C /* PedelecUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PedelecUITests.swift; sourceTree = "<group>"; };
+		84FA18A029140E9900E5298C /* PedelecUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PedelecUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84FA187D29140E9800E5298C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84FA188D29140E9900E5298C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84FA189729140E9900E5298C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		84FA187729140E9800E5298C = {
+			isa = PBXGroup;
+			children = (
+				84FA188229140E9800E5298C /* Pedelec */,
+				84FA189329140E9900E5298C /* PedelecTests */,
+				84FA189D29140E9900E5298C /* PedelecUITests */,
+				84FA188129140E9800E5298C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		84FA188129140E9800E5298C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84FA188029140E9800E5298C /* Pedelec.app */,
+				84FA189029140E9900E5298C /* PedelecTests.xctest */,
+				84FA189A29140E9900E5298C /* PedelecUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84FA188229140E9800E5298C /* Pedelec */ = {
+			isa = PBXGroup;
+			children = (
+				84FA188329140E9800E5298C /* PedelecApp.swift */,
+				84FA188529140E9800E5298C /* ContentView.swift */,
+				84FA188729140E9900E5298C /* Assets.xcassets */,
+				84FA188929140E9900E5298C /* Preview Content */,
+			);
+			path = Pedelec;
+			sourceTree = "<group>";
+		};
+		84FA188929140E9900E5298C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				84FA188A29140E9900E5298C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		84FA189329140E9900E5298C /* PedelecTests */ = {
+			isa = PBXGroup;
+			children = (
+				84FA189429140E9900E5298C /* PedelecTests.swift */,
+			);
+			path = PedelecTests;
+			sourceTree = "<group>";
+		};
+		84FA189D29140E9900E5298C /* PedelecUITests */ = {
+			isa = PBXGroup;
+			children = (
+				84FA189E29140E9900E5298C /* PedelecUITests.swift */,
+				84FA18A029140E9900E5298C /* PedelecUITestsLaunchTests.swift */,
+			);
+			path = PedelecUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84FA187F29140E9800E5298C /* Pedelec */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84FA18A429140E9900E5298C /* Build configuration list for PBXNativeTarget "Pedelec" */;
+			buildPhases = (
+				84FA187C29140E9800E5298C /* Sources */,
+				84FA187D29140E9800E5298C /* Frameworks */,
+				84FA187E29140E9800E5298C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pedelec;
+			productName = Pedelec;
+			productReference = 84FA188029140E9800E5298C /* Pedelec.app */;
+			productType = "com.apple.product-type.application";
+		};
+		84FA188F29140E9900E5298C /* PedelecTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84FA18A729140E9900E5298C /* Build configuration list for PBXNativeTarget "PedelecTests" */;
+			buildPhases = (
+				84FA188C29140E9900E5298C /* Sources */,
+				84FA188D29140E9900E5298C /* Frameworks */,
+				84FA188E29140E9900E5298C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84FA189229140E9900E5298C /* PBXTargetDependency */,
+			);
+			name = PedelecTests;
+			productName = PedelecTests;
+			productReference = 84FA189029140E9900E5298C /* PedelecTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		84FA189929140E9900E5298C /* PedelecUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84FA18AA29140E9900E5298C /* Build configuration list for PBXNativeTarget "PedelecUITests" */;
+			buildPhases = (
+				84FA189629140E9900E5298C /* Sources */,
+				84FA189729140E9900E5298C /* Frameworks */,
+				84FA189829140E9900E5298C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84FA189C29140E9900E5298C /* PBXTargetDependency */,
+			);
+			name = PedelecUITests;
+			productName = PedelecUITests;
+			productReference = 84FA189A29140E9900E5298C /* PedelecUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84FA187829140E9800E5298C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					84FA187F29140E9800E5298C = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					84FA188F29140E9900E5298C = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 84FA187F29140E9800E5298C;
+					};
+					84FA189929140E9900E5298C = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 84FA187F29140E9800E5298C;
+					};
+				};
+			};
+			buildConfigurationList = 84FA187B29140E9800E5298C /* Build configuration list for PBXProject "Pedelec" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84FA187729140E9800E5298C;
+			productRefGroup = 84FA188129140E9800E5298C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84FA187F29140E9800E5298C /* Pedelec */,
+				84FA188F29140E9900E5298C /* PedelecTests */,
+				84FA189929140E9900E5298C /* PedelecUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84FA187E29140E9800E5298C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84FA188B29140E9900E5298C /* Preview Assets.xcassets in Resources */,
+				84FA188829140E9900E5298C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84FA188E29140E9900E5298C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84FA189829140E9900E5298C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84FA187C29140E9800E5298C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84FA188629140E9800E5298C /* ContentView.swift in Sources */,
+				84FA188429140E9800E5298C /* PedelecApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84FA188C29140E9900E5298C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84FA189529140E9900E5298C /* PedelecTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84FA189629140E9900E5298C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84FA189F29140E9900E5298C /* PedelecUITests.swift in Sources */,
+				84FA18A129140E9900E5298C /* PedelecUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84FA189229140E9900E5298C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84FA187F29140E9800E5298C /* Pedelec */;
+			targetProxy = 84FA189129140E9900E5298C /* PBXContainerItemProxy */;
+		};
+		84FA189C29140E9900E5298C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84FA187F29140E9800E5298C /* Pedelec */;
+			targetProxy = 84FA189B29140E9900E5298C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		84FA18A229140E9900E5298C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		84FA18A329140E9900E5298C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84FA18A529140E9900E5298C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Pedelec/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.juliankretzschmar.Pedelec;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		84FA18A629140E9900E5298C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Pedelec/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.juliankretzschmar.Pedelec;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		84FA18A829140E9900E5298C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.juliankretzschmar.PedelecTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pedelec.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Pedelec";
+			};
+			name = Debug;
+		};
+		84FA18A929140E9900E5298C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.juliankretzschmar.PedelecTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pedelec.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Pedelec";
+			};
+			name = Release;
+		};
+		84FA18AB29140E9900E5298C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.juliankretzschmar.PedelecUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Pedelec;
+			};
+			name = Debug;
+		};
+		84FA18AC29140E9900E5298C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.juliankretzschmar.PedelecUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Pedelec;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84FA187B29140E9800E5298C /* Build configuration list for PBXProject "Pedelec" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84FA18A229140E9900E5298C /* Debug */,
+				84FA18A329140E9900E5298C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84FA18A429140E9900E5298C /* Build configuration list for PBXNativeTarget "Pedelec" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84FA18A529140E9900E5298C /* Debug */,
+				84FA18A629140E9900E5298C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84FA18A729140E9900E5298C /* Build configuration list for PBXNativeTarget "PedelecTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84FA18A829140E9900E5298C /* Debug */,
+				84FA18A929140E9900E5298C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84FA18AA29140E9900E5298C /* Build configuration list for PBXNativeTarget "PedelecUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84FA18AB29140E9900E5298C /* Debug */,
+				84FA18AC29140E9900E5298C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84FA187829140E9800E5298C /* Project object */;
+}
