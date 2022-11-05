@@ -10,10 +10,20 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Text("Pedelec App")
+                .font(.title)
+            Image("map")
+                .resizable()
+                .scaledToFit()
+                .padding(.bottom)
+            
+            ScrollView {
+                reserveElement(range: 50, distance: 150, color: 1)
+                reserveElement(range: 10, distance: 200, color: 2)
+                reserveElement(range: 25, distance: 230, color: 1)
+                reserveElement(range: 5, distance: 480, color: 3)
+                reserveElement(range: 7, distance: 540, color: 3)
+            }
         }
         .padding()
     }
