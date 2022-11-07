@@ -12,6 +12,7 @@ struct ContentView: View {
         VStack {
             Text("Pedelec App")
                 .font(.title)
+                .foregroundColor(Color(red: 38/255, green: 145/255, blue: 175/255))
             Image("map")
                 .resizable()
                 .scaledToFit()
