@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct reserveElement: View {
-    var range = 50
-    var distance = 200
+    @State var range = 50
+    @State var distance = 200
     //1: green, 2: orange, 3: red
-    var color = 1
+    @State var color = 1
     
     var body: some View {
         HStack {
