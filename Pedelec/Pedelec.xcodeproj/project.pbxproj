@@ -14,7 +14,7 @@
 		84FA189529140E9900E5298C /* PedelecTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FA189429140E9900E5298C /* PedelecTests.swift */; };
 		84FA189F29140E9900E5298C /* PedelecUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FA189E29140E9900E5298C /* PedelecUITests.swift */; };
 		84FA18A129140E9900E5298C /* PedelecUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FA18A029140E9900E5298C /* PedelecUITestsLaunchTests.swift */; };
-		84FA18AE2916657800E5298C /* reserveElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FA18AD2916657800E5298C /* reserveElement.swift */; };
+		84FA18AE2916657800E5298C /* ReserveElementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FA18AD2916657800E5298C /* ReserveElementView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +45,7 @@
 		84FA189A29140E9900E5298C /* PedelecUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PedelecUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84FA189E29140E9900E5298C /* PedelecUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PedelecUITests.swift; sourceTree = "<group>"; };
 		84FA18A029140E9900E5298C /* PedelecUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PedelecUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		84FA18AD2916657800E5298C /* reserveElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = reserveElement.swift; sourceTree = "<group>"; };
+		84FA18AD2916657800E5298C /* ReserveElementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReserveElementView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +98,7 @@
 			children = (
 				84FA188329140E9800E5298C /* PedelecApp.swift */,
 				84FA188529140E9800E5298C /* ContentView.swift */,
-				84FA18AD2916657800E5298C /* reserveElement.swift */,
+				84FA18AD2916657800E5298C /* ReserveElementView.swift */,
 				84FA188729140E9900E5298C /* Assets.xcassets */,
 				84FA188929140E9900E5298C /* Preview Content */,
 			);
@@ -261,7 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84FA188629140E9800E5298C /* ContentView.swift in Sources */,
-				84FA18AE2916657800E5298C /* reserveElement.swift in Sources */,
+				84FA18AE2916657800E5298C /* ReserveElementView.swift in Sources */,
 				84FA188429140E9800E5298C /* PedelecApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

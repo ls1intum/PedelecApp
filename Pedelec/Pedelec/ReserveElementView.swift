@@ -7,10 +7,10 @@
 
 import SwiftUI
 
-struct reserveElement: View {
+struct ReserveElementView: View {
     @State var range = 50
     @State var distance = 200
-    //1: green, 2: orange, 3: red
+    // 1: green, 2: orange, 3: red
     @State var color = 1
     
     var body: some View {
@@ -51,6 +51,6 @@ struct reserveElement: View {
 
 struct Button_Previews: PreviewProvider {
     static var previews: some View {
-        reserveElement()
+        ReserveElementView()
     }
 }
