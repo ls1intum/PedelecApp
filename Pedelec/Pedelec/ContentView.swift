@@ -19,11 +19,11 @@ struct ContentView: View {
                 .padding(.bottom)
             
             ScrollView {
-                reserveElement(range: 50, distance: 150, color: 1)
-                reserveElement(range: 10, distance: 200, color: 2)
-                reserveElement(range: 25, distance: 230, color: 1)
-                reserveElement(range: 5, distance: 480, color: 3)
-                reserveElement(range: 7, distance: 540, color: 3)
+                ReserveElementView(range: 50, distance: 150, color: 1)
+                ReserveElementView(range: 10, distance: 200, color: 2)
+                ReserveElementView(range: 25, distance: 230, color: 1)
+                ReserveElementView(range: 5, distance: 480, color: 3)
+                ReserveElementView(range: 7, distance: 540, color: 3)
             }
         }
         .padding()
