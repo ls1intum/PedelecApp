@@ -44,7 +44,7 @@ struct ReserveElementView: View {
             .clipShape(Capsule())
         }
         .padding()
-        .background(Color(red: 240/255, green: 240/255, blue: 240/255))
+        .background(.white)
         .cornerRadius(15)
     }
 }
