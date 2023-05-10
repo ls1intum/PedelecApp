@@ -39,7 +39,7 @@ struct ReserveElementView: View {
                 print("Reserved")
             }
             .padding()
-            .background(.green)
+            .background(.blue)
             .foregroundColor(.white)
             .clipShape(Capsule())
         }
