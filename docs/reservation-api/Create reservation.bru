@@ -1,0 +1,21 @@
+meta {
+  name: Create reservation
+  type: http
+  seq: 4
+}
+
+post {
+  url: http://localhost:8080/reservation
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "id": "1",
+      "startTime": "2022-01-01T00:00:00Z",
+      "endTime": "2022-01-01T01:00:00Z",
+      "employeeId": "1",
+      "pedelecId": "1"
+  }
+}
