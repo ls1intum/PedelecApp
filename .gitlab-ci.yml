@@ -17,7 +17,7 @@ build:
   script:
     - cd Pedelec\ Server/$GO_MODULE
     - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
-    - docker build -t $IMAGE_TAG ./$GO_MODULE
+    - docker build -t $IMAGE_TAG .
     - docker push $IMAGE_TAG
   parallel:
     matrix:
