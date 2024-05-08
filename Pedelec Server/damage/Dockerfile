@@ -24,5 +24,6 @@ WORKDIR /app
 # Copy the built binary from the builder container into the minimal runtime container
 COPY --from=builder /app/damage . 
 
+EXPOSE 8082
 # Run your Go application
 CMD ["/app/damage"]

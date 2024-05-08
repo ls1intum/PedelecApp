@@ -1,6 +1,7 @@
 package main
 
 import (
+	"log"
 	"reservation/model"
 
 	"github.com/gin-gonic/gin"
@@ -9,6 +10,8 @@ import (
 func main() {
 	gin.SetMode(gin.ReleaseMode)
 	r := gin.Default()
+
+	log.Println("Starting reservation service")
 
 	r.GET("/pedelec", func(c *gin.Context) {
 		c.JSON(200, MockPedelecs)
