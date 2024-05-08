@@ -1,0 +1,19 @@
+meta {
+  name: Create damage
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:8082/damage
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "pedelecId": "1",
+    "severity": 2,
+    "comment": "Minor scratches on the frame"
+  }
+}

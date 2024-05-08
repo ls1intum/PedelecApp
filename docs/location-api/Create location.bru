@@ -1,0 +1,19 @@
+meta {
+  name: Create location
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:8081/locations
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "id": "1",
+    "lat": 40.7128,
+    "lng": -74.0060
+  }
+}
