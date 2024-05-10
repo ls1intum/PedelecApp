@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+    name: reservation
+    namespace: pedelec
+spec:
+    replicas: 1
+    selector:
+        matchLabels:
+            app: reservation
+    template:
+        metadata:
+            labels:
+                app: reservation
+        spec:
+            containers:
+            - name: reservation
+              image: gitlab.lrz.de:5005/ase/ipraktikum/pedelec-app/reservation:feat-add-microservices
+              ports:
+              - containerPort: 8080
+                name: reservation-api
+        
+              resources: # It is always a good idea to limit the resources of your containers - We did not cover this in the lecture, but it is a good practice to do so.
+                limits:
+                    cpu: "1"
+                    memory: "512Mi"

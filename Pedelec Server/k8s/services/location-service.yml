@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: pedelec-location-service
+  namespace: pedelec
+spec:
+  selector:
+    app: location
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: location-api
