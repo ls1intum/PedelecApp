@@ -2,7 +2,7 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: pedelec-ingress
-  namespace: ga58roj # Hardcoded namespace - change this to your own namespace!
+  namespace: pedelec # Hardcoded namespace - change this to your own namespace!
 spec:
   rules:
   - host: example.pedelec.k8s-dev.ase.cit.tum.de # Adapt
