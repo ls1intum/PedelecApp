@@ -1,0 +1,23 @@
+version: '3.8'
+services:
+  reservation:
+    build:
+      context: ./reservation
+      dockerfile: Dockerfile
+    image: gitlab.lrz.de:5005/ase/ipraktikum/pedelec-app/reservation:${IMAGE_TAG:-latest}
+    ports:
+      - 8080:8080
+  location:
+    build:
+      context: ./location
+      dockerfile: Dockerfile
+    image: gitlab.lrz.de:5005/ase/ipraktikum/pedelec-app/location:${IMAGE_TAG:-latest}
+    ports:
+      - 8081:8081
+  damage:
+    build:
+      context: ./damage
+      dockerfile: Dockerfile
+    image: gitlab.lrz.de:5005/ase/ipraktikum/pedelec-app/damage:${IMAGE_TAG:-latest}
+    ports:
+      - 8082:8082
