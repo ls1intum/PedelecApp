@@ -1,0 +1,298 @@
+{
+  "name": "Pedelec",
+  "version": "1",
+  "items": [
+    {
+      "type": "folder",
+      "name": "damage-api",
+      "items": [
+        {
+          "type": "http",
+          "name": "Create damage",
+          "seq": 2,
+          "request": {
+            "url": "http://{{hostname_damage}}/damage",
+            "method": "POST",
+            "headers": [],
+            "params": [],
+            "body": {
+              "mode": "json",
+              "json": "{\n  \"pedelecId\": \"1\",\n  \"severity\": 2,\n  \"comment\": \"Minor scratches on the frame\"\n}",
+              "formUrlEncoded": [],
+              "multipartForm": []
+            },
+            "script": {},
+            "vars": {},
+            "assertions": [],
+            "tests": "",
+            "auth": {
+              "mode": "none"
+            }
+          }
+        },
+        {
+          "type": "http",
+          "name": "Get damage by PedelecID",
+          "seq": 1,
+          "request": {
+            "url": "http://{{hostname_damage}}/damage/1",
+            "method": "GET",
+            "headers": [],
+            "params": [],
+            "body": {
+              "mode": "none",
+              "formUrlEncoded": [],
+              "multipartForm": []
+            },
+            "script": {},
+            "vars": {},
+            "assertions": [],
+            "tests": "",
+            "auth": {
+              "mode": "none"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "folder",
+      "name": "location-api",
+      "items": [
+        {
+          "type": "http",
+          "name": "Create location",
+          "seq": 2,
+          "request": {
+            "url": "http://{{hostname_location}}/locations",
+            "method": "POST",
+            "headers": [],
+            "params": [],
+            "body": {
+              "mode": "json",
+              "json": "{\n  \"id\": \"1\",\n  \"lat\": 40.7128,\n  \"lng\": -74.0060\n}",
+              "formUrlEncoded": [],
+              "multipartForm": []
+            },
+            "script": {},
+            "vars": {},
+            "assertions": [],
+            "tests": "",
+            "auth": {
+              "mode": "none"
+            }
+          }
+        },
+        {
+          "type": "http",
+          "name": "Get location by ID",
+          "seq": 1,
+          "request": {
+            "url": "http://{{hostname_location}}/locations/1",
+            "method": "GET",
+            "headers": [],
+            "params": [],
+            "body": {
+              "mode": "none",
+              "formUrlEncoded": [],
+              "multipartForm": []
+            },
+            "script": {},
+            "vars": {},
+            "assertions": [],
+            "tests": "",
+            "auth": {
+              "mode": "none"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "folder",
+      "name": "reservation-api",
+      "items": [
+        {
+          "type": "http",
+          "name": "Create reservation",
+          "seq": 4,
+          "request": {
+            "url": "http://{{hostname_reservation}}/reservation",
+            "method": "POST",
+            "headers": [],
+            "params": [],
+            "body": {
+              "mode": "json",
+              "json": "{\n    \"id\": \"1\",\n    \"startTime\": \"2022-01-01T00:00:00Z\",\n    \"endTime\": \"2022-01-01T01:00:00Z\",\n    \"employeeId\": \"1\",\n    \"pedelecId\": \"1\"\n}",
+              "formUrlEncoded": [],
+              "multipartForm": []
+            },
+            "script": {},
+            "vars": {},
+            "assertions": [],
+            "tests": "",
+            "auth": {
+              "mode": "none"
+            }
+          }
+        },
+        {
+          "type": "http",
+          "name": "Delete reservation by ID",
+          "seq": 5,
+          "request": {
+            "url": "http://{{hostname_reservation}}/reservation/1",
+            "method": "DELETE",
+            "headers": [],
+            "params": [],
+            "body": {
+              "mode": "none",
+              "formUrlEncoded": [],
+              "multipartForm": []
+            },
+            "script": {},
+            "vars": {},
+            "assertions": [],
+            "tests": "",
+            "auth": {
+              "mode": "none"
+            }
+          }
+        },
+        {
+          "type": "http",
+          "name": "Get pedelec by ID",
+          "seq": 2,
+          "request": {
+            "url": "http://{{hostname_reservation}}/pedelec",
+            "method": "GET",
+            "headers": [],
+            "params": [],
+            "body": {
+              "mode": "none",
+              "formUrlEncoded": [],
+              "multipartForm": []
+            },
+            "script": {},
+            "vars": {},
+            "assertions": [],
+            "tests": "",
+            "auth": {
+              "mode": "none"
+            }
+          }
+        },
+        {
+          "type": "http",
+          "name": "Get pedelecs",
+          "seq": 1,
+          "request": {
+            "url": "http://{{hostname_reservation}}/pedelec",
+            "method": "GET",
+            "headers": [],
+            "params": [],
+            "body": {
+              "mode": "none",
+              "formUrlEncoded": [],
+              "multipartForm": []
+            },
+            "script": {},
+            "vars": {},
+            "assertions": [],
+            "tests": "",
+            "auth": {
+              "mode": "none"
+            }
+          }
+        },
+        {
+          "type": "http",
+          "name": "Get reservation by ID",
+          "seq": 3,
+          "request": {
+            "url": "http://{{hostname_reservation}}/reservation/1",
+            "method": "GET",
+            "headers": [],
+            "params": [],
+            "body": {
+              "mode": "none",
+              "formUrlEncoded": [],
+              "multipartForm": []
+            },
+            "script": {},
+            "vars": {},
+            "assertions": [],
+            "tests": "",
+            "auth": {
+              "mode": "none"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "activeEnvironmentUid": "0uRnsLDBJpbJbAn8LuXSW",
+  "environments": [
+    {
+      "variables": [
+        {
+          "name": "hostname_reservation",
+          "value": "pedelec-workshop.k8s.ase.cit.tum.de/reservation",
+          "enabled": true,
+          "secret": false,
+          "type": "text"
+        },
+        {
+          "name": "hostname_location",
+          "value": "pedelec-workshop.k8s.ase.cit.tum.de/locations",
+          "enabled": true,
+          "secret": false,
+          "type": "text"
+        },
+        {
+          "name": "hostname_damage",
+          "value": "pedelec-workshop.k8s.ase.cit.tum.de/damage",
+          "enabled": true,
+          "secret": false,
+          "type": "text"
+        }
+      ],
+      "name": "K8s"
+    },
+    {
+      "variables": [
+        {
+          "name": "hostname_damage",
+          "value": "localhost:8082",
+          "enabled": true,
+          "secret": false,
+          "type": "text"
+        },
+        {
+          "name": "hostname_reservation",
+          "value": "localhost:8080",
+          "enabled": true,
+          "secret": false,
+          "type": "text"
+        },
+        {
+          "name": "hostname_location",
+          "value": "localhost:8081",
+          "enabled": true,
+          "secret": false,
+          "type": "text"
+        }
+      ],
+      "name": "Local-Development"
+    }
+  ],
+  "brunoConfig": {
+    "version": "1",
+    "name": "Pedelec",
+    "type": "collection",
+    "ignore": [
+      "node_modules",
+      ".git"
+    ]
+  }
+}

@@ -5,7 +5,7 @@ metadata:
   namespace: pedelec # Hardcoded namespace - change this to your own namespace!
 spec:
   rules:
-  - host: example.pedelec.k8s-dev.ase.cit.tum.de # Adapt
+  - host: pedelec-workshop.k8s.ase.cit.tum.de
     http:
       paths:
       - pathType: Prefix
@@ -23,7 +23,7 @@ spec:
             port:
               number: 80
       - pathType: Prefix
-        path: "/locations"
+        path: "/location"
         backend:
           service:
             name: pedelec-location-service
