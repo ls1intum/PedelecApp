@@ -27,8 +27,8 @@ jobs:
   reservation:
     uses: ls1intum/.github/.github/workflows/build-and-push-docker-image.yml@v1.1.0
     with:
-      image-name: ghcr.io/ls1intum/pedelec-app/reservation
-      docker-file: Dockerfile # Corrected path
+      image-name: ls1intum/pedelec-app/reservation # Corrected image name
+      docker-file: ./Pedelec Server/reservation/Dockerfile # Corrected Dockerfile path
       docker-context: ./Pedelec Server/reservation
       tags: |
         ${{ inputs.release_tag }}
@@ -38,8 +38,8 @@ jobs:
   location:
     uses: ls1intum/.github/.github/workflows/build-and-push-docker-image.yml@v1.1.0
     with:
-      image-name: ghcr.io/ls1intum/pedelec-app/location
-      docker-file: Dockerfile # Corrected path
+      image-name: ls1intum/pedelec-app/location # Corrected image name
+      docker-file: ./Pedelec Server/location/Dockerfile # Corrected Dockerfile path
       docker-context: ./Pedelec Server/location
       tags: |
         ${{ inputs.release_tag }}
@@ -49,8 +49,8 @@ jobs:
   damage:
     uses: ls1intum/.github/.github/workflows/build-and-push-docker-image.yml@v1.1.0
     with:
-      image-name: ghcr.io/ls1intum/pedelec-app/damage
-      docker-file: Dockerfile # Corrected path
+      image-name: ls1intum/pedelec-app/damage # Corrected image name
+      docker-file: ./Pedelec Server/damage/Dockerfile # Corrected Dockerfile path
       docker-context: ./Pedelec Server/damage
       tags: |
         ${{ inputs.release_tag }}
