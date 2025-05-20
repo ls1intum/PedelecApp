@@ -1,0 +1,12 @@
+name: Docker Image CI
+
+on:
+  push:
+
+jobs:
+  build-and-push-images:
+    uses: ./.github/workflows/build-and-push-docker-servers.yml
+    with:
+      release_tag: ${{ github.sha }}
+      tag_as_latest: true
+    secrets: inherit
