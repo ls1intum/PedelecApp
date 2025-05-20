@@ -1,0 +1,58 @@
+name: Build and Push Docker Image Servers
+
+on:
+  workflow_call:
+    inputs:
+      release_tag:
+        description: "Optional image tag override"
+        required: false
+        type: string
+      tag_as_latest: # New input
+        description: "Whether to also tag the image as 'latest'"
+        required: false
+        type: boolean
+        default: false
+    outputs:
+      RESERVATION_IMAGE_TAG:
+        description: "Tag of the reservation server image"
+        value: ${{ jobs.reservation.outputs.image_tag }}
+      LOCATION_IMAGE_TAG:
+        description: "Tag of the location server image"
+        value: ${{ jobs.location.outputs.image_tag }}
+      DAMAGE_IMAGE_TAG:
+        description: "Tag of the damage server image"
+        value: ${{ jobs.damage.outputs.image_tag }}
+
+jobs:
+  reservation:
+    uses: ls1intum/.github/.github/workflows/build-and-push-docker-image.yml@v1.1.0
+    with:
+      image-name: ghcr.io/ls1intum/pedelec-app/reservation
+      docker-file: Dockerfile # Corrected path
+      docker-context: ./Pedelec Server/reservation
+      tags: |
+        ${{ inputs.release_tag }}
+        ${{ inputs.tag_as_latest && 'latest' }}
+    secrets: inherit
+
+  location:
+    uses: ls1intum/.github/.github/workflows/build-and-push-docker-image.yml@v1.1.0
+    with:
+      image-name: ghcr.io/ls1intum/pedelec-app/location
+      docker-file: Dockerfile # Corrected path
+      docker-context: ./Pedelec Server/location
+      tags: |
+        ${{ inputs.release_tag }}
+        ${{ inputs.tag_as_latest && 'latest' }}
+    secrets: inherit
+
+  damage:
+    uses: ls1intum/.github/.github/workflows/build-and-push-docker-image.yml@v1.1.0
+    with:
+      image-name: ghcr.io/ls1intum/pedelec-app/damage
+      docker-file: Dockerfile # Corrected path
+      docker-context: ./Pedelec Server/damage
+      tags: |
+        ${{ inputs.release_tag }}
+        ${{ inputs.tag_as_latest && 'latest' }}
+    secrets: inherit
